@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/* Det som finns i navbar importeras in här */
+/* Det som finns i color och media queries importera in här  */
+/* Ger färgerna jag ska använda ett namn för att använda det istället då det underlättar mycket */
+/* Funktion som visar hur hemsidan ska ändra sig när man använder en platta eller mobil*/
 .navbar__logo, .navbar__menu, .navbar__menu--links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7,6 +12,7 @@
           align-items: center;
 }
 
+/* Hur navigationen ska se ut detta inkluderar (loggan, de olika menyerna och knappen samt vad som händer när man hovrar över dessa*/
 .navbar {
   background: #f7f7f7;
   height: 80px;
@@ -87,6 +93,7 @@
   transition: all 0.3s ease;
 }
 
+/*Egenskaper som gäller för allt */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -95,6 +102,7 @@
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+/* Hur huvudcontainern ska se ut (även från en platta)*/
 .hero {
   background-color: #f7f7f7;
 }
@@ -115,6 +123,10 @@
   max-width: 1200px;
   padding-right: 24px;
   padding-left: 24px;
+  /*Hur conatinern till vänster ska se ut (främst texten -färg och storlek men även om man använder mobil eller platta) */
+  /* Hur knappen ska se ut -färg och vad som ska hända när man hovrar över den */
+  /* Egenskaper för containern till höger */
+  /* Hur bilden ska se ut */
 }
 
 @media screen and (max-width: 768px) {

@@ -1,5 +1,7 @@
+/* Det som finns i navbar importeras in här */
 @import 'navbar';
 
+/*Egenskaper som gäller för allt */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +9,7 @@
   font-family: 'Kumbh Sans', sans-serif;
 }
 
-
+/* Hur huvudcontainern ska se ut (även från en platta)*/
 .hero {
   background-color: $light;
 
@@ -29,6 +31,7 @@
       height: 100%;
     }
 
+    /*Hur conatinern till vänster ska se ut (främst texten -färg och storlek men även om man använder mobil eller platta) */
     &--left {
       width: 100%;
       line-height: 1.2;
@@ -71,6 +74,7 @@
       }
     }
 
+    /* Hur knappen ska se ut -färg och vad som ska hända när man hovrar över den */
     &--btn {
       font-size: 1rem;
       background-color: $lime;
@@ -108,10 +112,12 @@
       width: 100%;
     }
 
+    /* Egenskaper för containern till höger */
     &--right {
       text-align: center;
     }
 
+    /* Hur bilden ska se ut */
     &--img {
       height: 100%;
       width: 100%;

@@ -1,3 +1,4 @@
+/* Funktion som visar hur hemsidan ska ändra sig när man använder en platta eller mobil*/
 @mixin tablet {
     @media screen and (max-width: 768px) {
       @content;

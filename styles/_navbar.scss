@@ -1,3 +1,4 @@
+/* Det som finns i color och media queries importera in här  */
 @import 'colors';
 @import 'media-queries';
 
@@ -6,6 +7,7 @@
   align-items: center;
 }
 
+/* Hur navigationen ska se ut detta inkluderar (loggan, de olika menyerna och knappen samt vad som händer när man hovrar över dessa*/
 .navbar {
   background: $light;
   height: 80px;
