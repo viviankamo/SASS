@@ -99,7 +99,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 /* Hur huvudcontainern ska se ut (även från en platta)*/
@@ -213,7 +213,7 @@
 
 .hero__container--btn:after {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 0;
