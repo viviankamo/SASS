@@ -1,11 +1,11 @@
 const express = require('express')
-const dBModule = require('./dBModule')
+const databaseModule = require('./dBModule')
 const personmodel = require('./PersonModel')
 const messageModel = require('./MessageModel')
 
 const app = express()
 const port = 3000
-const clientDir = __dirname + "\\client\\"
+const clientDir = __dirname + "\\styles\\"
 
 app.use(express.json())
 app.use(express.urlencoded())
@@ -23,19 +23,19 @@ app.get('/messages', async (req, res) => {
 })
 
 app.post('/', (req, res) => {
- let person = personmodel.newPerson(req.body.name, req.body.email, req.body.age)
-    databaseModule.storeElement(person)
-    
-    res.render("pages/index.ejs", { name: " " + req.body.name }) 
-  })
-
-  app.post('/postmessage', async (req, res) => {
-    let message = messageModel.newMessage(req.body.email, req.body.message)
-    databaseModule.storeElement(messages)
-    let messages = await messageModel.getAllMessages()
-    res.render("pages/messages.ejs", {messages: messages})
-  })
-
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}!`)
-})
+  let person = personmodel.newPerson(req.body.name, req.body.email, req.body.age)
+     databaseModule.storeElement(person)
+     
+     res.render("pages/index.ejs", { name: " " + req.body.name }) 
+   })
+ 
+   app.post('/postmessage', async (req, res) => {
+     let message = messageModel.newMessage(req.body.email, req.body.message)
+     databaseModule.storeElement(messages)
+     let messages = await messageModel.getAllMessages()
+     res.render("pages/messages.ejs", {messages: messages})
+   })
+ 
+ app.listen(port, () => {
+     console.log(`Example app listening on port ${port}!`)
+ })
